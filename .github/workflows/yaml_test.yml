@@ -9,8 +9,8 @@ jobs:
   deploy-to-server:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout code 
-        uses: actions/setup-checkout@v2
+      #- name: Checkout code 
+      #  uses: actions/setup-checkout@v2
 
       - name: display files
         run: |
