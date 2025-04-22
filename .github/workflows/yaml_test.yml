@@ -1,0 +1,19 @@
+name: CI intergration test
+
+on:
+  push:
+    branch:
+      - devops
+
+jobs:
+  deploy-to-server:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code 
+        uses: actions/setup-checkout@v2
+
+      - name: display files
+        run: |
+          ls -la
+      - name: display hostname
+        run: hostnamectl
